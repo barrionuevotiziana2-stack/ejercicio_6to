@@ -7,8 +7,8 @@ body{
     display: inline-block;
     padding: 10px;
     border: 1px solid rgb(2, 11, 29);
-    background-color: cadetblue;
-    box-shadow: 15px 15px 25px cornflowerblue;
+    background-color: rgb(235, 46, 46);
+    box-shadow: 15px 15px 25px rgb(161, 22, 22);
     border-radius: 25px;
 }
 #pantalla {
