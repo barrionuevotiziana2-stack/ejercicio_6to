@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animales salvajes</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>Los Depredadores más Salvajes</h1>
+
+    <div class="animal-card">
+        <h2>1. León (Panthera leo)</h2>
+        <p>Conocido como el "rey de la selva", es un depredador social que caza principalmente en equipo en las llanuras
+            africanas.</p>
+    </div>
+
+    <div class="animal-card">
+        <h2>2. Tiburón Blanco (Carcharodon carcharias)</h2>
+        <p>El depredador marino más famoso. Su capacidad de detectar presas a larga distancia lo convierte en un cazador
+            letal en los océanos.</p>
+    </div>
+
+    <div class="animal-card">
+        <h2>3. Oso Polar (Ursus maritimus)</h2>
+        <p>Considerado uno de los carnívoros terrestres más grandes y feroces, adaptado perfectamente para sobrevivir en
+            el Ártico.</p>
+    </div>
+
+    <div class="animal-card">
+        <h2>4. Cocodrilo del Nilo (Crocodylus niloticus)</h2>
+        <p>Un depredador de emboscada extremadamente paciente y poderoso que domina las riberas de los ríos en África.
+        </p>
+    </div>
+    <section class="caja">
+        <h1>calculadora avanzada</h1>
+        <input type="text" id="pantalla" disabled>
+        <article>
+            <button onclick="limpiar()">C</button>
+            <button onclick="agregar('/')">/</button>
+            <button onclick="agregar('*')">*</button>
+            <button onclick="agregar('+')">+</button>
+            <button onclick="agregar('-')">-</button>
+            <button onclick="calcular()">=</button>
+            <br />
+            <button onclick="agregar('0')">0</button>
+            <button onclick="agregar('1')">1</button>
+            <button onclick="agregar('2')">2</button>
+            <button onclick="agregar('3')">3</button>
+            <button onclick="agregar('4')">4</button>
+            <button onclick="agregar('5')">5</button>
+            <button onclick="agregar('6')">6</button>
+            <button onclick="agregar('7')">7</button>
+            <button onclick="agregar('8')">8</button>
+            <button onclick="agregar('9')">9</button>
+          
+        </article>
+    </section>
+    <script>
+        function agregar(valor) {
+            let pantalla = document.getElementById("pantalla");
+            pantalla.value = pantalla.value + valor;
+        }
+
+        function limpiar() {
+            let pantalla = document.getElementById("pantalla");
+            pantalla.value = "";
+        }
+        function calcular() {
+            let pantalla = document.getElementById("pantalla");
+            pantalla.value = eval(pantalla.value);
+        }
+
+    </script>
+</body>
+
+</html>
